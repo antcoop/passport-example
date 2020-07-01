@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Todo.associate = function(models) {
     Todo.belongsTo(models.User);
-  }
+  };
   Todo.init(
     {
       name: DataTypes.STRING,
